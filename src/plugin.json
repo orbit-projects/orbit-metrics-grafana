@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "app",
+  "name": "Orbit Metrics",
+  "id": "orbitprojects-metricsgrafana-app",
+  "info": {
+    "keywords": ["app", "orbit", "metrics", "observability", "prometheus"],
+    "description": "Grafana dashboards and app experience for Orbit Core metrics exported through Prometheus.",
+    "author": {
+      "name": "Orbit Project"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Overview",
+      "path": "/a/%PLUGIN_ID%",
+      "addToNav": true,
+      "defaultNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "Orbit Runtime Overview",
+      "path": "dashboards/orbit-runtime-overview.json",
+      "addToNav": true,
+      "defaultNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Orbit HTTP Traffic",
+      "path": "dashboards/orbit-http-traffic.json",
+      "addToNav": true,
+      "defaultNav": false
+    }
+  ],
+  "dependencies": {
+    "grafanaDependency": ">=13.1.0",
+    "plugins": []
+  }
+}
