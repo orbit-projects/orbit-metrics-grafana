@@ -73,7 +73,7 @@
     "react-use": "17.6.1"
   },
   "dependencies": {
-    "@grafana/data": "13.2.3",
+    "@grafana/data": "13.3.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
